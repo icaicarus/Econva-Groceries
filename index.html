@@ -1,126 +1,135 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>Restaurant</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
-    <script src="p5.js"></script>
-    <style>
-      body {
-        background-color: #E8E2D8;
-        font-family: Helvetica, sans-serif;
-      }
-    </style>
+
+<head>
+	<!-- Initialize screen size, background, font, CSS file -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Econva</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+	body {
+		background-color: #E8E2D8;
+		font-family: Helvetica, sans-serif;
+	}
+</style>
+
 <body>
-<header>
-            <div class="logo">
-              <a href="/">econva groceries</a>
-            </div>
-            <nav>
-              
-              <div class="menu-container">
-                <div class="menu">
-                    <p>
-                        <a href="shopByRegion.html">shop by region</a>
-                    </p>
-                    <p>
-                      
-                        <a href="about.html">about</a>
-                    </p>
-                    <p>
-                        <a href="faq.html">faq</a>
-                    </p>
-                    <p>
-                        <a href="contact.html">contact</a>
-                    </p>
-                </div>
-                </div>
-            </nav>
-        </header>
-<div class="row">
-  <div class="column">
-    <img src="photos/econva1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="photos/econva2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="photos/econva3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="photos/econva4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
-</div>
 
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
+	<header>
+		<div class="logo">
+			<a href="/">econva groceries</a> <!-- Logo -->
+		</div>
 
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="photos/econva1.jpg" style="width:100%">
-    </div>
+		<nav>
+			<div class="menu-container">
+				<div class="menu">
+					<!-- Navigation bar -->
+					<p>
+						<a href="shopByRegion.html">shop by region</a>
+					</p>
+					<p>
+						<a href="about.html">about</a>
+					</p>
+					<p>
+						<a href="faq.html">faq</a>
+					</p>
+					<p>
+						<a href="contact.html">contact</a>
+					</p>
+				</div>
+			</div>
+		</nav>
+	</header>
 
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="photos/econva2.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="photos/econva3.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="photos/econva4.jpg" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="column">
-      <img class="demo cursor" src="photos/econva1.jpg" style="width:100%" onclick="currentSlide(1)">
+	<div class="row">
+		<!-- Lines up slideshow images on site -->
+		<div class="column">
+			<img src="photos/econva1.jpg" style="width:100%" onclick="openSlideshow();currentSlide(1)" class="hover-shadow cursor">
     </div>
     <div class="column">
-      <img class="demo cursor" src="photos/econva2.jpg" style="width:100%" onclick="currentSlide(2)">
+      <img src="photos/econva2.jpg" style="width:100%" onclick="openSlideshow();currentSlide(2)" class="hover-shadow cursor">
     </div>
     <div class="column">
-      <img class="demo cursor" src="photos/econva3.jpg" style="width:100%" onclick="currentSlide(3)">
+      <img src="photos/econva3.jpg" style="width:100%" onclick="openSlideshow();currentSlide(3)" class="hover-shadow cursor">
     </div>
     <div class="column">
-      <img class="demo cursor" src="photos/econva4.jpg" style="width:100%" onclick="currentSlide(4)">
+      <img src="photos/econva4.jpg" style="width:100%" onclick="openSlideshow();currentSlide(4)" class="hover-shadow cursor">
     </div>
   </div>
-</div>
-        <h-content>
- <div class = "box">
-   <div class = "box-content">
-                <div align="center">
-                  <h3>What is this site for?</h3>
-                </div>
-                <br>
-                <p>Econva Groceries was created to help find eco-friendly alternatives to traditional grocery shopping, specifically in the Southern Ontario region. Sometimes it can be difficult to know almost every purchase we make, even essential ones, contribute negatively to the environment. There isn't much individual consumers can do to fight the system, except vote with our dollar and support better alternatives to things that destroy our planets ecosystems, which is exactly what our site is for!</p>
-                </div>
-                </div>
-<div class = "box">
-  <div class = "box-content">
-                <div align="center">
-                  <h3>What's wrong with traditional grocery stores?</h3>
-                </div>
-                <br>
-                <p>We all know traditional grocery stores use all kinds of plastics that are apparently 'disposable' but can take millions of years to decompose, but what is the true extent of it? Single use plastics contribute to most of the garbage in the oceans, and almost all grocery stores use them. These can be plastic bags, food packaging, and other things that are not made to be reused or last. Historically, things are only getting more and more packaged, as can be seen with cereal boxes, which used to only contain a cardboard box but now also have a plastic bag in them. In just 2018, approximately 30 million tonnes of waste have been dumped into landfills. If you want to know more, check out our about page.</p>
-            </div>
-            </div>
-            </h-content>
-            <a href="shopByRegion.html">
-              <div align="center">
-            <button class="button"><span>Start your journey</span></button>
-            </div>
-            </a>
-            
-        <script src="script.js"></script>
-    </body>
+
+  <div id="mySlideshow" class="slideshow"> <!-- Close button -->
+    <span class="close cursor" onclick="closeSlideshow()">&times;</span>
+    <div class="Slideshow-content">
+
+      <div class="mySlides"> <!-- Enters enlarged slideshow -->
+        <div class="numbertext">1 / 4</div>
+        <img src="photos/econva1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="photos/econva2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="photos/econva3.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="photos/econva4.jpg" style="width:100%">
+      </div>
+      
+      <!-- Next/previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="column"> <!-- Displays minimized photos underneath -->
+        <img class="demo cursor" src="photos/econva1.jpg" style="width:100%" onclick="currentSlide(1)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="photos/econva2.jpg" style="width:100%" onclick="currentSlide(2)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="photos/econva3.jpg" style="width:100%" onclick="currentSlide(3)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="photos/econva4.jpg" style="width:100%" onclick="currentSlide(4)">
+      </div>
+    </div>
+  </div>
+  
+  <h-content> <!-- Info box 1 -->
+  <div class = "box">
+    <div class = "box-content">
+     <div align="center">
+       <h3>What is this site for?</h3>
+    </div>
+    <br>
+      <p>Econva Groceries was created to help find eco-friendly alternatives to traditional grocery shopping, specifically in the Southern Ontario region. Sometimes it can be difficult to know almost every purchase we make, even essential ones, contribute negatively to the environment. There isn't much individual consumers can do to fight the system, except vote with our dollar and support better alternatives to things that destroy our planets ecosystems, which is exactly what our site is for!</p>
+    </div>
+  </div>
+
+  <div class = "box"> <!-- Info box 2 -->
+    <div class = "box-content">
+      <div align="center">
+        <h3>What's wrong with traditional grocery stores?</h3>
+      </div>
+      <br>
+        <p>We all know traditional grocery stores use all kinds of plastics that are apparently 'disposable' but can take millions of years to decompose, but what is the true extent of it? Single use plastics contribute to most of the garbage in the oceans, and almost all grocery stores use them. These can be plastic bags, food packaging, and other things that are not made to be reused or last. Historically, things are only getting more and more packaged, as can be seen with cereal boxes, which used to only contain a cardboard box but now also have a plastic bag in them. In just 2018, approximately 30 million tonnes of waste have been dumped into landfills. If you want to know more, check out our about page.</p>
+      </div>
+  </div>
+  </h-content>
+
+  <a href="shopByRegion.html"> <!-- Button to go to the next page -->
+    <div align="center">
+      <button class="button"><span>Start your journey</span></button>
+    </div>
+  </a>  
+
+    <script src="script.js"></script> <!-- Access JS file -->
+  </body>
 </html>
