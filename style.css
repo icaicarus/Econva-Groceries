@@ -54,7 +54,7 @@ header {
   text-decoration: none;
 }
 
-.leftbox {
+.box {
   align-items: center;
   justify-content: center;
   background: #f4f4f4;
@@ -62,12 +62,8 @@ header {
   height:400px;
 }
 
-.rightbox {
-  align-items: center;
-  justify-content: center;
-  background: #f4f4f4;
-  width:45%;
-  height:400px;
+.box-content {
+  padding: 15px;
 }
 
 f-content {
@@ -249,3 +245,42 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.button {
+  border-radius: 4px;
+  background-color: #6C7967;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 230px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 50px;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
