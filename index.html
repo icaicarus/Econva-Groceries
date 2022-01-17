@@ -13,8 +13,8 @@
         font-family: Helvetica, sans-serif;
       }
     </style>
-    <body>
-        <header>
+<body>
+<header>
             <div class="logo">
               <a href="/">econva groceries</a>
             </div>
@@ -23,22 +23,78 @@
               <div class="menu-container">
                 <div class="menu">
                     <p>
-                        <a href="shopByRegion.html">shop by region</a>
+                        <a href="/">shop by region</a>
                     </p>
                     <p>
                       
-                        <a href="about.html">about</a>
+                        <a href="/">about</a>
                     </p>
                     <p>
                         <a href="faq.html">faq</a>
                     </p>
                     <p>
-                        <a href="contact.html">contact</a>
+                        <a href="/">contact</a>
                     </p>
                 </div>
                 </div>
             </nav>
         </header>
+<div class="row">
+  <div class="column">
+    <img src="econva1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="econva2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="econva3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="econva4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="econva1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="econva2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="econva3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="econva4.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="column">
+      <img class="demo cursor" src="econva1.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="econva2.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="econva3.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="econva4.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+  </div>
+</div>
         <h-content>
  <div class = "leftbox">
                 <p>askjhdkhdlhasd   v</p>
