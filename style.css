@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+.logo {
+  font-weight: 500;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  background-color: #134E7C;
+}
+
+.menu-container {
+  width: 100vw;
+  background-color: #8E9BCC;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  height: 60px;
+  letter-spacing: 1.5px;
+}
+.menu p {
+  flex-direction: row;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.menu p a {
+  color: white;
+  text-decoration: none;
+}
+
+.leftbox {
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  width:45%;
+  height:400px;
+}
+
+.rightbox {
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  width:45%;
+  height:400px;
+}
+
+f-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+h-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.dropdown {
+  background-color: #E8E2D8;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.active, .dropdown:hover {
+  background-color: #f4f4f4;
+}
+
+.dropdown:after {
+  content: '\002B';
+  color: #777;
+  font-size: 20px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\292B";
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.dropdownContent {
+  padding: 0 18px;
+  width: 70%;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: #E8E2D8;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
