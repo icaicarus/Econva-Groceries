@@ -4,11 +4,12 @@
   box-sizing: border-box;
 } 
 
+/* font*/
 html {
   font-family: Helvetica, sans-serif;
 }
 
-
+/* "Econva groceries" logo */
 .logo {
   font-weight: 500;
   color: white;
@@ -17,12 +18,12 @@ html {
   padding-top: 5px;
   padding-bottom: 7px;
 }
-
 .logo a {
   color: white;
   text-decoration: none;
 }
 
+/* header content */
 header {
   display: flex;
   flex-direction: column;
@@ -32,10 +33,13 @@ header {
   background-color: #134E7C;
 }
 
+/* menu bar */
 .menu-container {
   width: 100vw;
   background-color: #8E9BCC;
 }
+
+/* menu content */
 .menu {
   display: flex;
   align-items: center;
@@ -49,12 +53,12 @@ header {
   margin-right: 20px;
   margin-left: 20px;
 }
-
 .menu p a {
   color: white;
   text-decoration: none;
 }
 
+/* home page info box */
 .box {
   align-items: center;
   justify-content: center;
@@ -62,11 +66,11 @@ header {
   width:45%;
   height:500px;
 }
-
 .box-content {
   padding: 15px;
 }
 
+/* faq content */
 f-content {
   display: flex;
   flex-direction: column;
@@ -75,6 +79,7 @@ f-content {
   padding-top: 50px;
 }
 
+/* header content */
 h-content {
   display: flex;
   flex-direction: row;
@@ -102,6 +107,7 @@ h-content {
   background-color: #f4f4f4;
 }
 
+/* Plus sign */
 .dropdown:after {
   content: '\002B';
   color: #777;
@@ -110,12 +116,14 @@ h-content {
   margin-left: 5px;
 }
 
+/* close sign */
 .active:after {
   content: "\292B";
   font-size: 15px;
   font-weight: bold;
 }
 
+/* panel containing content */
 .dropdownContent {
   padding: 0 18px;
   width: 70%;
@@ -128,18 +136,17 @@ h-content {
   transition: max-height 0.2s ease-out;
 }
 
+/* boz sizes */
 .row > .column {
   padding-top: 50px;
   padding-left: 10px;
   padding-right:10px;
 }
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 .column {
   float: left;
   width: 25%;

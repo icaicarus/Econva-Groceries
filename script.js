@@ -31,7 +31,7 @@ function currentSlide(y) {
   showSlides(slideIndex = y); //index for current slide
 }
 
-function showSlides(z) { //Displays images in slideshow
+function showSlides(z) { //Displays images in slideshow depending on selection index
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("demo");
   if (z > slides.length) {
@@ -49,3 +49,4 @@ function showSlides(z) { //Displays images in slideshow
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += "active";
 }
+

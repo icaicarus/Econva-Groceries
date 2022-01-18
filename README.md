@@ -53,6 +53,8 @@ function showSlides(z) { //Displays images in slideshow
 ### About
 **Code and Writing by: Joanna**
 
+`about.html` `style.css`
+
 - This is the section with our mission statement
 - It also has all of our works cited, for the entire research of this project and the image credits for the homepage
 - Nothing fancy in terms of code, only thing maybe noteworthy is the hyperlink and that's still too easy to say anything about
@@ -60,6 +62,8 @@ function showSlides(z) { //Displays images in slideshow
 
 ### Contact
 **Code by: Joanna**
+
+`contact.html` `style.css`
 
 - This page has a single hyperlink which leads to the user's email client
 - It took me so long to figure out how to do that with just HTML, there is a better way which lets the user type a comment and their email in seperate boxes and *then* it links them to their email, which already has the info they put in, but you can't do that without PHP from what I understood
@@ -89,7 +93,7 @@ for (i = 0; i < drop.length; i++) { //Drops panel down to show content
 ```
 
 ## Documentation
-[Github repository](https://github.com/icaicarus/Econva-Groceries)
+On the FAQ page of our website, there's answers and guides throughout the most important parts of the website. This MD also offers a look into how the website was made and who contributed to what parts. Additionally, all our files are stored on [Econva's Github repository](https://github.com/icaicarus/Econva-Groceries).
 
 ## Credits
 [Photo/source citations](https://docs.google.com/document/d/1suOFyWYDXuieVtiCiYQnB-TLZ1AFFjidwytJflorH-U/edit?usp=sharing)
