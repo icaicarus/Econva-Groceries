@@ -22,7 +22,7 @@ Below is information relevant to every part of the website and code files.
 `index.html` `script.js` `style.css`
 
 - This is the landing page for users
-- Top navigation bar consistent throughout all the pages
+- Top navigation bar consistent throughout all the pages (all made by me)
 - Coded mainly in HTML combined with CSS elements
 - Has information relevant to the purpose of our website and plastic packaging
 - Consists of a picture slideshow animated using JS below:
@@ -48,7 +48,13 @@ function showSlides(z) { //Displays images in slideshow
 ```
 
 
-### Shop by region
+### Shop by region and shop pages
+**Code by: Maryam**
+
+`shopByRegion.html` `shopHamilton.html` `shopHuntsville.html` `shopKitchener.html` `shop.Ottawa.html` `shopToronto.html` `shopWaterloo.html` `style.css`
+
+- shop by region page contains hyperlinks to all of the different cities that users can choose from
+- each shop[city] page contains logo images which, when clicked take the user to the website of the company/business 
 
 ### About
 **Code and Writing by: Joanna**
@@ -94,6 +100,8 @@ for (i = 0; i < drop.length; i++) { //Drops panel down to show content
 
 ## Documentation
 On the FAQ page of our website, there's answers and guides throughout the most important parts of the website. This MD also offers a look into how the website was made and who contributed to what parts. Additionally, all our files are stored on [Econva's Github repository](https://github.com/icaicarus/Econva-Groceries).
+- Compiled + tested in Replit collaboratively 
+- Version controlled using Github
 
 ## Credits
 [Photo/source citations](https://docs.google.com/document/d/1suOFyWYDXuieVtiCiYQnB-TLZ1AFFjidwytJflorH-U/edit?usp=sharing)

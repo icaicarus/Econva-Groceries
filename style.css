@@ -70,7 +70,7 @@ header {
   padding: 15px;
 }
 
-/* faq content */
+/* faq/shop content */
 f-content {
   display: flex;
   flex-direction: column;
@@ -79,7 +79,7 @@ f-content {
   padding-top: 50px;
 }
 
-/* header content */
+/* home/shop content */
 h-content {
   display: flex;
   flex-direction: row;
@@ -136,7 +136,7 @@ h-content {
   transition: max-height 0.2s ease-out;
 }
 
-/* boz sizes */
+/* box sizes */
 .row > .column {
   padding-top: 50px;
   padding-left: 10px;
@@ -152,6 +152,21 @@ h-content {
   width: 25%;
 }
 
+
+/*centre pictures*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*specific region font control*/
+h1 {
+    width:500px;
+    margin: 0 auto;
+    text-align: center;
+}
 /* slideshow */
 .slideshow {
   display: none;
