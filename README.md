@@ -17,12 +17,14 @@ Below is information relevant to every part of the website and code files.
 ### Home
 **Code by: Marryam K**
 
+**Writing by: Joanna**
+
 `index.html` `script.js` `style.css`
 
 - This is the landing page for users
-- Top navigation bar consistent throughout all the pages (*Coded by Marryam*)
+- Top navigation bar consistent throughout all the pages
 - Coded mainly in HTML combined with CSS elements
-- Has information relevant to the purpose of our website and plastic packaging (*Written by Joanna*)
+- Has information relevant to the purpose of our website and plastic packaging
 - Consists of a picture slideshow animated using JS below:
 ```js
 function showSlides(z) { //Displays images in slideshow
@@ -49,11 +51,23 @@ function showSlides(z) { //Displays images in slideshow
 ### Shop by region
 
 ### About
+**Code and Writing by: Joanna**
+
+- This is the section with our mission statement
+- It also has all of our works cited, for the entire research of this project and the image credits for the homepage
+- Nothing fancy in terms of code, only thing maybe noteworthy is the hyperlink and that's still too easy to say anything about
+- Works cited was also made by me
 
 ### Contact
+**Code by: Joanna**
 
+- This page has a single hyperlink which leads to the user's email client
+- It took me so long to figure out how to do that with just HTML, there is a better way which lets the user type a comment and their email in seperate boxes and *then* it links them to their email, which already has the info they put in, but you can't do that without PHP from what I understood
+- Instead I made it just so that it opens the user's email client with our email already in the email being composed, and they can take it from there
 ### FAQ
 **Code by: Marryam K**
+
+**Writing by: Marryam and Joanna**
 
 `faq.html` `script.js` `style.css`
 

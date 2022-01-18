@@ -83,7 +83,7 @@ h-content {
   padding: 50px;
 }
 
-
+/* Dropdown boxes (question) */
 .dropdown {
   background-color: #E8E2D8;
   color: black;
@@ -97,6 +97,7 @@ h-content {
   transition: 0.4s;
 }
 
+/* On hover, turns a lighter colour */
 .active, .dropdown:hover {
   background-color: #f4f4f4;
 }
@@ -168,7 +169,7 @@ h-content {
   max-width: 1200px;
 }
 
-/* close button */
+/* close button + hover */
 .close {
   color: white;
   content: "\292B";
@@ -252,6 +253,7 @@ img.hover-shadow {
 
 }
 
+/* "Start your journey" button */
 .button span {
   cursor: pointer;
   display: inline-block;
@@ -259,6 +261,7 @@ img.hover-shadow {
   transition: 0.5s;
 }
 
+/* button on hover */
 .button span:after {
   content: '\00bb';
   position: absolute;
@@ -267,11 +270,9 @@ img.hover-shadow {
   right: -20px;
   transition: 0.5s;
 }
-
 .button:hover span {
   padding-right: 25px;
 }
-
 .button:hover span:after {
   opacity: 1;
   right: 0;
